@@ -1,5 +1,5 @@
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
-
+  
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
 
 ## Instructions
@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites have designated break points in their web design to fit specific device sizes. They will not work seamlessly across all devices, only those designed for.
+
+Responsive design utilizes primarily percentages and other units like rem (for font) and properties like max-width to scale to whatever device a user is operating. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is a design process where you begin by focusing on the mobile experience. You will design so everything functions properly on mobile first, then you will work your way up the device size until you get to desktop. With the demand of mobile sites, it is likely better for a company to focus on mobile design and then scale up using media queries to desktop. That way, all the kinks can get worked out since it's typically harder to design for smaller screens anyway.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the deafult font-size to 10px so when using rems, everything will be a multiple of 10 for easy math. E.g. 3.5rem is equal to 35 pixels in standard font size.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way to code that allows a compiler to take a new language (LESS) and convert it into CSS for you. By using LESS, we can do many more things that we cannot do in regular CSS, like use variables and mix-ins. Also, the compiler watches your code so anytime you save your work, it will show where the error is. This is a huge advantage to when you are coding with 1000s of lines of code, on multiple pages!
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite thing about preprocessing is the compiler. Being able to go directly there for help with errors in syntax is AMAZING! Also, it makes so much practical sense to write code in different compartments. This is the only way that teams can work on a huge project, but also, imagine losing thousands of lines of code in one file. It would be a disaster. This way, you can at least have your main code, header, footer, nav, etc. in different files so it's not a total loss. 
+
+The parametric mixins make sense, but they still give me some trouble conceptually. I think when I see them in action on bigger projects their utility will become self-evident.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

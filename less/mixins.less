@@ -1,1 +1,41 @@
 // Mixins Here
+
+.tshoot(){
+    border: 2px solid black;
+}
+
+.flex-just-cen(){
+    display: flex;
+    justify-content: center;
+}
+
+// Parametric Here
+
+.section-format (@bg, @fontcolor, @bordercolor) {
+    background-color: @bg;
+    color: @fontcolor;
+    border: 1px solid @bordercolor;
+}
+
+.btn-design (@bg, @width, @fontcolor) {
+    display: block;
+    background-color: @bg;
+    cursor: pointer;
+    width: @width;
+    height: 35px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    color: @fontcolor;
+
+    @media @phone {
+
+        width: 100%;
+        height: 75px;
+        border-radius: 8px;
+    }
+
+    &:hover{
+        background-color: @fontcolor;
+        color: @bg;
+      }
+}
