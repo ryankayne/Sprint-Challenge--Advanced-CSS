@@ -16,3 +16,19 @@
     color: @fontcolor;
     border: 1px solid @bordercolor;
 }
+
+.btn-design (@bg, @width, @fontcolor) {
+    display: block;
+    background-color: @bg;
+    cursor: pointer;
+    width: @width;
+    height: 35px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    color: @fontcolor;
+
+    &:hover{
+        background-color: @fontcolor;
+        color: @bg;
+      }
+}

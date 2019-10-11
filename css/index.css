@@ -208,6 +208,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  border-radius: 5px;
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -249,6 +253,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: #22283A;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  color: #F6F6F6;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
