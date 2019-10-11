@@ -1,1 +1,18 @@
 // Mixins Here
+
+.tshoot(){
+    border: 2px solid black;
+}
+
+.flex-just-cen(){
+    display: flex;
+    justify-content: center;
+}
+
+// Parametric Here
+
+.section-format (@bg, @fontcolor, @bordercolor) {
+    background-color: @bg;
+    color: @fontcolor;
+    border: 1px solid @bordercolor;
+}

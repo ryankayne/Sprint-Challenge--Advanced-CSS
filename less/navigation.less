@@ -1,1 +1,47 @@
 // Navigation code here
+
+.top {
+    .flex-just-cen();
+    .section-format(@wild-sand, @river-bend, @sea-shell);
+    
+    width: 100%;
+    
+
+    .nav {
+        .flex-just-cen();
+        
+        padding: 2%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+
+        div {
+            .flex-just-cen();
+            align-items: center;
+            width: 100%;
+            padding: 1%;
+            
+
+            h1 {
+                font-size: 4.5rem;
+                padding: 0;
+            }
+        } // this ends div
+
+        nav {
+            width: 75%;
+            max-width: 450px;
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            
+
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+            
+            } // this ends a
+        } // this ends nav
+    } // this ends .nav
+}
